@@ -31,9 +31,8 @@ test_labels = test_labels.squeeze()
 train_images = train_images / 255.0
 test_images  = test_images  / 255.0
 
-# had to change path to test  
 try:
-  model50k = tf.keras.models.load_model("simple-convolutional-neural-networks-charlie-51135/best_model.h5")
+  model50k = tf.keras.models.load_model("best_model.h5")
 except:
   print("Failure loading best_model.h5")
 print("Model50k loaded")
